@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Images/Sign_up.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 77vh;
+    width: 30vw;
+    background-color: #c1edc7;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 60vh;
+}
+.card:hover{
+    box-shadow: 10px 10px 15px rgb(0, 0, 0);
+}
+.title{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+.content{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.input{
+    height: 35px;
+    width: 80%;
+    margin-top: 2vh;
+    border-radius: 5px;
+    padding-left: 1vw;
+    border: 2px solid rgb(222, 137, 0);
+    background-color: rgb(254, 232, 167);
+}
+.input:focus{
+    outline: none;
+}
+.but{
+    height: 35px;
+    width: 85%;
+    margin-top: 2vh;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(222, 137, 0);
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+}
+.but:hover{
+    background-color: rgb(255, 201, 40);
+}
+.but:active{
+    background-color: rgb(222, 137, 0);
+}
+.link{
+    text-decoration: none;
+    color: rgb(222, 137, 0);
+    margin-left: .5vw;
+}
+
+/*Mobile View*/
+@media only screen and (min-width:320px) and (max-width:480px){
+    .title{
+        position: sticky;
+        background-color: #c1edc7;
+        top: 0;
+    }
+    .card{
+        height: 73vh;
+        width: 90vw;
+        border-radius: 5px;
+    }
+    .input{
+        height: 30px;
+        width: 80%;
+        margin-top: 1.5vh;
+        padding-left: 1vw;
+    }
+    .but{
+        height: 30px;
+        width: 83%;
+        margin-top: 2vh;
+        font-size: 18px;
+    }
+}
+
+/*Tablet view*/
+@media only screen and (min-width:481px) and (max-width:768px){
+    .card{
+        height: 83vh;
+        width: 50vw;
+    }
+    .input{
+        height: 35px;
+        width: 80%;
+        margin-top: 2vh;
+        padding-left: 1vw;
+    }
+    .but{
+        height: 35px;
+        width: 85%;
+        margin-top: 2vh;
+        font-size: 18px;
+    }
+}
+/*small laptop*/
+@media only screen and (min-width:769px) and (max-width:1200px){
+    .card{
+        height: 83vh;
+        width: 40vw;
+    }
+    .input{
+        height: 35px;
+        width: 80%;
+        margin-top: 2vh;
+        padding-left: 1vw;
+    }
+    .but{
+        height: 35px;
+        width: 85%;
+        margin-top: 2vh;
+        font-size: 18px;
+    }
+}

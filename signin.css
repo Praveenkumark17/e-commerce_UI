@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Images/Sign_in.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 45vh;
+    width: 30vw;
+    border-radius: 15px;
+    background-color: rgb(254, 232, 167);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 35vh;
+    box-shadow: 10px 10px 10px black;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head p{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.input-icon{
+    display: flex;
+    margin-top: 2.5vh;
+    border-radius: 5px;
+}
+.icon{
+    height: 37px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4fce4;
+    color: #1a4c21;
+    border: 2px solid #1a4c21;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.input{
+    height: 35px;
+    width: 20vw;
+    border: 2px solid #1a4c21;
+    background-color: #e4fce4;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 1vw;
+}
+.input:focus{
+    outline: none;
+}
+.input-icon:active{
+    outline: 2px solid greenyellow;
+}
+.but{
+    margin-top: 2.5vh;
+    height: 37px;
+    width: 23.5vw;
+    border-radius: 5px;
+    background-color: #1a4c21;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5vh;
+    font-size: large;
+}
+a{
+    text-decoration: none;
+    color: #1a4c21;
+    margin-left: .5vw;
+}
+
+/*Mobile View*/
+@media only screen and (min-width:320px) and (max-width:480px){
+    .card{
+        height: 47vh;
+        width: 80vw;
+        border-radius: 7px;
+    }
+    .content{
+        width: 100%;
+        /* background-color: #1a4c21; */
+    }
+    .input-icon{
+        width: 70vw;
+    }
+    .icon{
+        height: 37px;
+        width: 35px;
+    }
+    .input{
+        height: 35px;
+        width: 100%;
+    }
+    .but{
+        height: 37px;
+        width: 100%;
+    }
+}
+
+/*Tablet view*/
+@media only screen and (min-width:481px) and (max-width:768px){
+    .card{
+        height: 47vh;
+        width: 50vw;
+        border-radius: 7px;
+    }
+    .content{
+        width: 100%;
+        /* background-color: #1a4c21; */
+    }
+    .input-icon{
+        width:40vw;
+    }
+    .icon{
+        height: 37px;
+        width: 35px;
+    }
+    .input{
+        height: 35px;
+        width: 100%;
+    }
+    .but{
+        height: 37px;
+        width: 100%;
+    }
+}
+
+/*small laptop*/
+@media only screen and (min-width:769px) and (max-width:1200px){
+    .card{
+        height: 45vh;
+        width: 37vw;
+        border-radius: 7px;
+    }
+    .content{
+        width: 100%;
+        /* background-color: #1a4c21; */
+    }
+    .input-icon{
+        width:30vw;
+    }
+    .icon{
+        height: 37px;
+        width: 35px;
+    }
+    .input{
+        height: 35px;
+        width: 100%;
+    }
+    .but{
+        height: 37px;
+        width: 100%;
+    }
+}
